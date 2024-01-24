@@ -1,5 +1,6 @@
 # Employee-Management-System---Stored-XSS
 
+Affected Web App: https://www.sourcecodester.com/php/16999/employee-management-system.html
 
 Title: Multiple Stored XSS
 
@@ -7,7 +8,7 @@ Affected Component: /employee_akpoly/Employee/edit-profile.php
 
 CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 
-CVSS 3.1 Score: 3.3
+CVSS 3.1 Score: 3.3 (self - rated with the help of online CVSS calculator)
 
 Impact: Cross-Site Scripting (XSS) vulnerabilities pose significant risks to web applications and users. These vulnerabilities can lead to unauthorized access, data manipulation, session hijacking, phishing attacks, malicious redirection, defacement, and client-side attacks. Attackers exploit XSS to inject and execute malicious scripts in the context of users' browsers, enabling a range of malicious activities. Impact severity varies, but the potential consequences include unauthorized access to sensitive information, reputation damage, and client-side exploitation. Mitigation strategies involve implementing secure coding practices like input validation, output encoding, and Content Security Policy (CSP). Regular security assessments, code reviews, and user awareness are crucial for effective XSS prevention.
 
