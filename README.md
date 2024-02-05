@@ -1,4 +1,4 @@
-# Employee-Management-System---Stored-XSS
+![image](https://github.com/jomskiller/Employee-Management-System---Stored-XSS/assets/145160254/a22bde13-4171-4ea9-a197-e48253b12701)# Employee-Management-System---Stored-XSS
 
 Affected Web App: https://www.sourcecodester.com/php/16999/employee-management-system.html
 
@@ -15,6 +15,10 @@ Impact: Cross-Site Scripting (XSS) vulnerabilities pose significant risks to web
 Proof of Concept (POC): To simulate this attack, initiate by logging in as an employee and accessing the employee profile editing page. On this page, various input fields, such as fullname, phone, date of birth, address, and date of appointment, are found to be susceptible to stored Cross-Site Scripting (XSS). Exploit this vulnerability by injecting the payload "><script>alert("xss")</script>// into these input fields. Consequently, visiting any page displaying the information from these fields, including the admin panel, triggers an alert prompt with the message "xss."
 
 ![sample image](https://github.com/jomskiller/Employee-Management-System---Stored-XSS/blob/main/image.png)
+
+Additionally I was able to Steal admin cookies using the XSS vulnerability.
+
+![image](https://github.com/jomskiller/Employee-Management-System---Stored-XSS/assets/145160254/7a9207f7-e4c4-43ff-b36f-67a8e8c88d6f)
 
 
 Remediation: To remediate Cross-Site Scripting (XSS) vulnerabilities, adhere to secure coding practices. Implement thorough input validation on both the client and server sides, and use output encoding to prevent the execution of malicious scripts. Employ a robust Content Security Policy (CSP) to restrict unauthorized script execution. Ensure cookies have the "HttpOnly" and "Secure" flags. Apply context-specific output encoding based on data usage contexts. Enhance browser security with security headers like "X-Content-Type-Options" and "X-Frame-Options." Regularly update software components to patch known vulnerabilities. These measures collectively bolster the defense against XSS threats, securing web applications from potential exploits.
