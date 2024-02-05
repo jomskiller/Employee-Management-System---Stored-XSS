@@ -1,4 +1,4 @@
-![image](https://github.com/jomskiller/Employee-Management-System---Stored-XSS/assets/145160254/a22bde13-4171-4ea9-a197-e48253b12701)# Employee-Management-System---Stored-XSS
+# Employee-Management-System---Stored-XSS
 
 Affected Web App: https://www.sourcecodester.com/php/16999/employee-management-system.html
 
